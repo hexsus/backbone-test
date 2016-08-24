@@ -18,7 +18,7 @@
             <th>Url</th>
             <th>Action</th>
         </tr>
-        <tr>
+        <tr class="top_inputs">
             <td><input type="text" class="form-control author_input"></td>
             <td><input type="text" class="form-control title_input"></td>
             <td><input type="text" class="form-control url_input"></td>
@@ -41,21 +41,24 @@
 </td>
 
 <td>
-    <span class="author">
+    <span class="title">
         <%= title %>
     </span>
 </td>
 
 <td>
-    <span class="author">
+    <span class="url">
         <%= url %>
     </span>
 </td>
 <td>
     <button class="btn btn-warning edit_blog">Edit</button>
+    <button class="btn btn-success update_blog" style="display: none;">Update</button>
 </td>
 <td>
     <button class="btn btn-danger delete_blog">delete</button>
+    <button class="btn btn-danger cancel_blog" style="display: none;">Cancel</button>
+
 </td>
 </script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
